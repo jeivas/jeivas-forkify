@@ -97,16 +97,11 @@ async function controlAddRecipe(newRecipe) {
   } catch (err) {
     console.error(err);
     addRecipeView.validationError(err);
-    // addRecipeView.renderError(err.message);
   }
 }
 
 function controlShoppingCart() {
   shoppingCartView.render(model.state.recipe);
-}
-
-function newFeature() {
-  console.log('WELCOME TO APPLICATION!');
 }
 
 function init() {
@@ -119,8 +114,6 @@ function init() {
   paginationView.addPaginationHandler(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   recipeView.addHandlerShopping(controlShoppingCart);
-  newFeature();
-  console.log('jeivao');
 }
 
 init();

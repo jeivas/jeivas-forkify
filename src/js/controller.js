@@ -104,10 +104,6 @@ function controlShoppingCart() {
   shoppingCartView.render(model.state.recipe);
 }
 
-function welcomeMessage() {
-  console.log('Welcome to forkify!');
-}
-
 function init() {
   bookmarksView.addHandlerRender(controlSavedBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -118,7 +114,6 @@ function init() {
   paginationView.addPaginationHandler(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   recipeView.addHandlerShopping(controlShoppingCart);
-  welcomeMessage();
 }
 
 init();

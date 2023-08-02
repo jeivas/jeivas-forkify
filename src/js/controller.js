@@ -117,5 +117,3 @@ function init() {
 }
 
 init();
-
-console.log('welcome');

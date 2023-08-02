@@ -120,6 +120,7 @@ function init() {
   addRecipeView.addHandlerUpload(controlAddRecipe);
   recipeView.addHandlerShopping(controlShoppingCart);
   newFeature();
+  console.log('jeivao');
 }
 
 init();

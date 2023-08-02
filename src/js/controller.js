@@ -105,6 +105,10 @@ function controlShoppingCart() {
   shoppingCartView.render(model.state.recipe);
 }
 
+function newFeature() {
+  console.log('WELCOME TO APPLICATION!');
+}
+
 function init() {
   bookmarksView.addHandlerRender(controlSavedBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -115,7 +119,7 @@ function init() {
   paginationView.addPaginationHandler(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   recipeView.addHandlerShopping(controlShoppingCart);
-  console.log('welcome');
+  newFeature();
 }
 
 init();
